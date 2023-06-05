@@ -6,12 +6,15 @@ A React component for organizing employee data in a table format.
 
 To install the `my-table-component`, run the following command:
 
+```bash
 npm install @pangzidao/my-table-component
+```
 
 ## Usage
 
 Import the `EmployeeTable` component and add it to your app:
 
+```jsx
 import React from 'react';
 import EmployeeTable from '@pangzidao/my-table-component';
 
@@ -25,14 +28,17 @@ function App() {
 }
 
 export default App;
+```
 
 By default, the component will retrieve data from local storage. However, you can also provide data to the component by passing the `employees` prop:
 
-
+```jsx
 <EmployeeTable employees={yourData} />
+```
 
 The `yourData` should be an array of objects in the following format:
 
+```javascript
 [
   {
     firstName: "John",
